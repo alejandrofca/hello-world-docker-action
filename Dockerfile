@@ -1,7 +1,7 @@
 FROM alpine:3.10
 
-USER airflow
 RUN chmod +x entrypoint.sh
-COPY entrypoint.sh /entrypoint.sh
+RUN mkdir -p /my
+COPY entrypoint.sh /my/entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
