@@ -10,6 +10,6 @@ outputs:
     description: 'Fecha en que nos conocimos'
 runs:
   using: 'docker'
-  image: 'alejandrofca/hello-world-docker-action'
+  image: docker://alejandrofca/hello-world-docker-action
   args:
   - ${{ inputs.who-to-greet }}
